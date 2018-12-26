@@ -1,0 +1,14 @@
+[General]
+loglevel = notify
+bypass-system = true
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local
+bypass-tun = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
+dns-server = 1.1.1.1, 8.8.8.8, 208.67.222.222
+
+[Proxy]
+// Shadowsocks using the external module.
+// Should upgrade to an AEAD cipher when supported.
+ProxyHTTP = http, 113.161.70.140, 443, hai.nx, pecc2
+ProxyHTTPS = https, 113.161.70.140, 443, hai.nx, pecc2
+ProxySOCKS5 = socks5, 113.161.70.140, 443, hai.nx, pecc2
+ProxySOCKS5TLS = socks5-tls, 113.161.70.140, 443, hai.nx, pecc2, skip-common-name-verify=true
