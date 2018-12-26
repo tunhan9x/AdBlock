@@ -12,3 +12,6 @@ ProxyHTTP = http, 113.161.70.140, 443, hai.nx, pecc2
 ProxyHTTPS = https, 113.161.70.140, 443, hai.nx, pecc2
 ProxySOCKS5 = socks5, 113.161.70.140, 443, hai.nx, pecc2
 ProxySOCKS5TLS = socks5-tls, 113.161.70.140, 443, hai.nx, pecc2, skip-common-name-verify=true
+
+
+FINAL,DIRECT
